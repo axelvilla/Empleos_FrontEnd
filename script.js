@@ -21,12 +21,16 @@ if (window.innerWidth > 760){
 
 //Haciendo el menu responsive
 
-/* window.addEventListener("resize", function()){
+window.addEventListener("resize", function(){
     if (window.innerWidth > 760){
-            body.classList.add("body_move");
-            side_menu.classList.add("menu__sidebar_move");
-        }else{
-            body.classList.remove("body_move");
-            side_menu.classList.remove("menu__sidebar_move");
-        }
-} */
+        body.classList.remove("body_move");
+        side_menu.classList.remove("menu__sidebar_move");
+    }
+    if (window.innerWidth < 760){
+        body.classList.add("body_move");
+        side_menu.classList.add("menu__sidebar_move");
+    }
+
+});
+
+    
