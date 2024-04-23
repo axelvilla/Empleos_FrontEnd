@@ -1,13 +1,17 @@
-*{
-    margin:0; /*distancia desde el borde del elemento hasta otros elementos*/
-    padding: 0; /*espacio de relleno desde el borde del elemento hasta el contenido*/
+* {
+    margin: 0;
+    /*distancia desde el borde del elemento hasta otros elementos*/
+    padding: 0;
+    /*espacio de relleno desde el borde del elemento hasta el contenido*/
     box-sizing: border-box;
     text-decoration: none;
 }
-body{
-    margin-left: 80px;
 
+body {
+    margin-left: 80px;
+    background-color: gray;
 }
+
 /* .menu{
     margin-left:80px ;
     margin-top: 100px;
@@ -15,34 +19,47 @@ body{
     display: inline-block;
 } */
 
-header{
+header {
     background-color: rgb(212, 209, 209);
     height: 50px;
     width: 100%;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
 }
-.login{
+
+.title {
+    padding-left: 6em;
+}
+
+.login {
     margin-right: 30px;
     font-size: x-large;
     color: #000;
     font-weight: bold;
 }
-.login:hover{
-    color: #fff;
-    cursor: pointer;
+
+.login a {
+    text-decoration: none;
+    color: black;
 }
 
-.icon__menu i{
+.login a:hover {
+    color: #1783DB;
+    cursor: pointer;
+
+}
+
+.icon__menu i {
     font-size: 20px;
     color: #000;
     cursor: pointer;
 }
-.menu__side{
+
+.menu__side {
     width: 80px;
     height: 100%;
-    background-color:#1783db;
+    background-color: #1783db;
     position: fixed;
     top: 0;
     left: 0;
@@ -51,39 +68,42 @@ header{
     z-index: 300;
     overflow: hidden;
     overflow-y: scroll;
-    border-right:  20px solid #1783db;
+    border-right: 20px solid #1783db;
     transition: all 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
-   
+
 
 }
 
 /*Ocultar scroll para safari chrome y opera*/
-.menu__side::-webkit-scrollbar{
+.menu__side::-webkit-scrollbar {
     display: none;
 }
 
 /*Ocultar scroll para IE, Edge y Firefox*/
-.menu__side{
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
+.menu__side {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
 }
 
 
-.name__page{
+.name__page {
     padding: 20px 30px;
     display: flex;
     align-items: center;
     margin-top: 10px;
 }
-.name__page i{
+
+.name__page i {
     width: 20px;
     margin-right: 20px;
 }
 
-.option__menu{
+.option__menu {
     padding: 20px 30px;
     top: 80px;
-    
+
 }
 
 .option__menu a {
@@ -97,28 +117,30 @@ header{
 .option__menu a:hover {
     color: #ffffff;
 }
-.option__menu .option{
+
+.option__menu .option {
     padding: 2opx 0px;
     display: flex;
     align-items: center;
     position: relative;
 }
 
-.option__menu .option i{
+.option__menu .option i {
     width: 20px;
     cursor: pointer;
     margin-right: 20px;
 }
 
-.option__menu .option h4{
+.option__menu .option h4 {
     font-weight: 300;
     cursor: pointer;
 }
-a.selected{
+
+a.selected {
     color: white;
 }
 
-.selected::before{
+.selected::before {
     content: '';
     width: 3px;
     height: 100%;
@@ -128,35 +150,36 @@ a.selected{
     left: -30px;
 
 }
-main{
+
+main {
     /* width: 100%;
     height: 100vh;
     background-color: #f5f5f5; */
-   
+
 }
 
-
-.buscador{
+/*Estilos Buscador*/
+.buscador {
 
     width: 100%;
     height: 500px;
     background-color: #058bf9;
-    background-image: linear-gradient(rgba(0,0,0, 0.5),rgba(0,0,0, 0.5)), url(./assets/buscador.jpeg);
-    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.696), rgba(0, 0, 0, 0.696)), url(./assets/buscador.jpeg);
+
     background-size: cover;
     background-position: center;
     background-position: right;
-    
-   
-    
+
+
+
 }
 
-.frase-buscador{
-    
+.frase-buscador {
+
     width: 50%;
     height: 50%;
     display: block;
-    
+
     margin-left: 25%;
     text-align: center;
     padding: 50px 0px;
@@ -164,26 +187,27 @@ main{
     color: #ffffff;
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
-   
+
 }
-.cuadro-buscador{
+
+.cuadro-buscador {
     width: 100%;
     height: 50%;
     display: block;
     text-align: center;
     padding: 100px 0px;
-    
+
     font: 2em sans-serif;
     color: #0c0b0b;
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
 }
 
-.buscador input{
+.buscador input {
     width: 50%;
     height: 50px;
     align-items: center;
-    
+
     text-align: center;
     border-radius: 10px;
 
@@ -192,63 +216,119 @@ main{
     outline: none;
     color: #121010;
     background-color: #ffffff;
-    
+
     margin-bottom: 10px;
 }
-.buscador input::placeholder{
+
+.buscador input::placeholder {
     color: #080808;
-} 
-.buscador i{
+}
+
+.buscador i {
     font-size: 30px;
     cursor: pointer;
 }
-.buscador i:hover{
+
+.buscador i:hover {
     color: #efecec;
 }
 
 
 
 
+
 /*Clases para usar en JavaScript*/
 
-.body_move{
+.body_move {
     margin-left: 250px;
 }
-.menu__sidebar_move{
+
+.menu__sidebar_move {
     width: 250px;
 }
 
+/*Estilos para pasantía*/
+
+.pasantias {
+    margin-top: 3em;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.696), rgba(0, 0, 0, 0.696)), url(./assets/pasantias-image.jpg);
+    background-size: cover;
+    background-position: center;
+    background-position: right;
+}
+
+.title-pasantia {
+    width: 100%;
+    height: 50%;
+    display: block;
+    text-align: center;
+    padding-top: 50px;
+    font: 3em sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.frase-pasantia {
+    margin-left: 10%;
+    width: 80%;
+    display: block;
+    text-align: center;
+    padding-top: 25px;
+    font: 1.5em sans-serif;
+    color: #ffffff;
+}
+
+.button-pasantia {
+    width: 30%;
+    margin-left: 35%;
+    display: block;
+    margin-top: 1em;
+    background-color: #058bf9;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    height: 40px;
+    font-size: 1.5em;
+    transition: background 1s;
+}
+
+.button-pasantia:hover {
+    background-color: white;
+    cursor: pointer;
+    color: #058bf9;
+    transition: background 1s;
+}
 
 
+/*Estilos Responsive*/
 
-
-
-@media screen and (max-width: 760px){
-    .body_move{
+@media screen and (max-width: 760px) {
+    .body_move {
         margin-left: 0px;
     }
-    .menu__sidebar_move{
+
+    .menu__sidebar_move {
         width: 80px;
         left: -80px;
     }
 
-    .icon__menu{
+    .icon__menu {
         transform: translateX(1px);
     }
 
-    .frase-buscador{
+    .frase-buscador {
         margin-left: 0px;
         width: 100%;
         font: 1.5em sans-serif;
     }
-    .cuadro-buscador{
+
+    .cuadro-buscador {
         width: 100%;
         font: 1.5em sans-serif;
         padding: 0px;
     }
 
-};
-    
+}
 
-
-
+;
