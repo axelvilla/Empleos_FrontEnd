@@ -79,9 +79,10 @@ header {
 }
 
 .icon__menu i {
-    font-size: 20px;
+    font-size: 25px;
     color: #000;
     cursor: pointer;
+    margin-left: 15px;
 }
 
 .menu__side {
