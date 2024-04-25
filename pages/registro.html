@@ -1,47 +1,134 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Registo.module.css">
-    <script src="https://kit.fontawesome.com/caed123d71.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Registo.module.css" />
+    <script
+      src="https://kit.fontawesome.com/caed123d71.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Registro</title>
-</head>
+  </head>
 
-<body>
-    <div class="container">
-        <div class="form-box">
+  <body>
+    <header>
+      <div class="icon__menu">
+        <i class="fa-solid fa-bars" id="btn_open"></i>
+      </div>
+      <div class="title">
+        <h1>AMAZING JOBS!</h1>
+      </div>
+      <div class="home"><a href="../index.html">HOME</a></div>
+    </header>
+    <section class="menu">
+      <div class="menu__side" id="menu_side">
+        <div class="name__page">
+          <i class="fa-solid fa-landmark"></i>
+          <h4>Amazing jobs</h4>
+        </div>
+        <div class="option__menu">
+          <a href="../index.html">
+            <div class="option">
+              <i class="fa-solid fa-house" title="Inicio"></i>
+              <h4>Inicio</h4>
+            </div>
+          </a>
+        </div>
+        <div class="option__menu">
+          <a href="" class="selected">
+            <div class="option">
+              <i class="fa-solid fa-id-card" title="Registro"></i>
+              <h4>Registro</h4>
+            </div>
+          </a>
+        </div>
+        <div class="option__menu">
+          <a href="../index.html#pasantias">
+            <div class="option">
+              <i class="fa-solid fa-globe" title="Pasantías"></i>
+              <h4>Pasantias</h4>
+            </div>
+          </a>
+        </div>
+        <div class="option__menu">
+          <a href="#trabajos">
+            <div class="option">
+              <i class="fa-solid fa-people-group" title="Equipo"></i>
+              <h4>Trabajos</h4>
+            </div>
+          </a>
+        </div>
+        <div class="option__menu">
+          <a href="#">
+            <div class="option">
+              <i class="fa-solid fa-layer-group" title="Categoria"></i>
+              <h4>Categoria</h4>
+            </div>
+          </a>
+        </div>
+        <div class="option__menu">
+          <a href="#">
+            <div class="option">
+              <i class="fa-solid fa-location-dot" title="Localidad"></i>
+              <h4>Localidad</h4>
+            </div>
+          </a>
+        </div>
+        <div class="option__menu">
+          <a href="#">
+            <div class="option">
+              <i class="fa-solid fa-address-book" title="Contacto"></i>
+              <h4>Contacto</h4>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <section>
+        <div class="container">
+          <div class="form-box">
             <h1 id="title">Sign Up</h1>
             <p>Create an account</p>
             <form>
-                <div class="input-group">
-                    <div class="input-field" id="nameField">
-                        <input type="text" placeholder="Full Name">
-                    </div>
-
-                    <div class="input-field">
-                        <input type="email" placeholder="Email">
-                    </div>
-
-                    <div class="input-field">
-                        <input type="password" placeholder="Password">
-                    </div>
-
-                    <div class="input-field">
-                        <input type="password" placeholder="Confirm Password" id="passwordField">
-                    </div>
-                    <a href="#" id="forgot-password" class="disable">Forgot password?</a>
+              <div class="input-group">
+                <div class="input-field" id="nameField">
+                  <input type="text" placeholder="Full Name" />
                 </div>
-                <div class="btn-field">
-                    <button type="button" id="signupBtn">Sign Up</button>
-                    <button type="button" class="disable" id="signinBtn">Sign In</button>
+
+                <div class="input-field">
+                  <input type="email" placeholder="Email" />
                 </div>
+
+                <div class="input-field">
+                  <input type="password" placeholder="Password" />
+                </div>
+
+                <div class="input-field">
+                  <input
+                    type="password"
+                    placeholder="Confirm Password"
+                    id="passwordField"
+                  />
+                </div>
+                <a href="#" id="forgot-password" class="disable"
+                  >Forgot password?</a
+                >
+              </div>
+              <div class="btn-field">
+                <button type="button" id="signupBtn">Sign Up</button>
+                <button type="button" class="disable" id="signinBtn">
+                  Sign In
+                </button>
+              </div>
             </form>
+          </div>
         </div>
-    </div>
-</body>
+      </section>
+    </main>
+  </body>
 
-<script src="./Registro.script.js"></script>
-
+  <script src="./Registro.script.js"></script>
 </html>

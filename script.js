@@ -12,7 +12,7 @@ function open_close_menu(){
     side_menu.classList.toggle("menu__sidebar_move");
 }
 
-/* Si el ancho de la página es menor a 760px, ocultará el menú al reargar la página. */
+/* Si el ancho de la página es menor a 760px, ocultará el menú al recargar la página. */
  
 if (window.innerWidth > 760){
     body.classList.add("body_move");
