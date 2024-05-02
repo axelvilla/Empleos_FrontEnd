@@ -182,7 +182,7 @@ a.selected {
 
 .container{
     width: 100%;
-    height: 100vh;
+    height: 103vh;
     background-image: linear-gradient(rgba(0,0,0, 0.5),rgba(0,0,0, 0.5)), url(../assets/job-image.jpg);
     background-position: center;
     background-size: cover;
@@ -191,40 +191,40 @@ a.selected {
 
 .form-box{
     width: 90%;
-    max-width: 50VH;
-    margin-top: 50px;
+    max-width: 80vh;
+    margin-top: 7vh;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     background: #fff;
-    padding: 50px 60px 70px;
+    padding: 4% 6% 7%;
     text-align: center;
 }
 
 .form-box h1{
-    font-size: 30px;
-    margin-bottom: 60px;
+    font-size: 180%;
+    margin-bottom: 12%;
     color: #000000;
     position: relative;
 }
 
 .form-box h1::after{
     content: '';
-    width: 30px;
-    height: 4px;
-    border-radius: 3px;
+    width: 10%;
+    height: 8%;
+    border-radius: 30%;
     background: #000000;
     position: absolute;
-    bottom: -12px;
+    bottom: -30%;
     left: 50%;
     transform: translateX(-50%);
 }
 
 .input-field{
     background: #eaeaeaea;
-    margin: 15px 0;
-    border-radius: 3px;
+    margin: 4%;
+    border-radius: 3%;
     display: flex;
     align-items: center;
     max-height: 65px;
@@ -236,7 +236,7 @@ form .input-group a{
     text-decoration: none;
     color: #000000;
     text-align: left;
-    font-size: 13px;
+    font-size: 80%;
 }
 
 input{
@@ -244,10 +244,12 @@ input{
     background: transparent;
     border: 0;
     outline: 0;
-    padding: 18px 15px;
+    padding: 6% 5%
 }
 
 .btn-field{
+    margin-top: 7%;
+    height: 3vh;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -257,7 +259,7 @@ input{
     flex-basis: 48%;
     background:black;
     color: #fff;
-    height: 40px;
+    height: 7vh;
     border-radius: 20px;
     border: 0;
     outline: 0;
@@ -266,7 +268,7 @@ input{
 }
 
 .input-group{
-    height: 310px;
+    height: 1%;
 }
 
 .btn-field button.disable{
