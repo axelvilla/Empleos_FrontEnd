@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="Registo.module.css" />
+    <link rel="stylesheet" href="Login.module.css" />
     <script
       src="https://kit.fontawesome.com/caed123d71.js"
       crossorigin="anonymous"
@@ -36,7 +36,7 @@
           </a>
         </div>
         <div class="option__menu">
-          <a href="" class="selected">
+          <a href="../registro.html" class="selected">
             <div class="option">
               <i class="fa-solid fa-id-card" title="Registro"></i>
               <h4>Registro</h4>
@@ -90,37 +90,25 @@
       <section>
         <div class="container">
           <div class="form-box">
-            <h1 id="title">Sign Up</h1>
-            <p>Create an account</p>
+            <h1 id="title">Sign In</h1>
+            <p>Join us</p>
             <form>
               <div class="input-group">
-                <div class="input-field" id="nameField">
-                  <input type="text" placeholder="Full Name" required/>
-                </div>
 
                 <div class="input-field">
                   <input type="email" placeholder="Email" id="email-field" required/>
                 </div>
 
                 <div class="input-field">
-                  <input type="password" placeholder="Password" id="password" required/>
+                  <input type="password" placeholder="Password" id="passwordField" class="passwordField" required/>
                 </div>
 
-                <div class="input-field">
-                  <input
-                    type="password"
-                    placeholder="Confirm Password" id="confirmPassword"
-                    required/>
-                </div>
-                <a href="#" id="forgot-password" class="disable"
-                  ></a
-                >
               </div>
               <div class="btn-field">
-                <button type="button" id="signupBtn">Sign Up</button>
+                <button type="button" id="signinBtn">Sign In</button>
               </div>
 
-              <p>Not a member? <a href="../pages/login/login.html">Login</a></p>
+              <p>Dont have an account? <a href="../registro.html">Register</a></p>
             </form>
           </div>
         </div>
@@ -128,7 +116,7 @@
     </main>
   </body>
 
-  <script src="./Registro.script.js">
-
+  <script src="./Login.script.js">
+    
   </script>
 </html>
