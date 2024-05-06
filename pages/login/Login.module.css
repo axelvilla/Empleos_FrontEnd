@@ -198,7 +198,7 @@ a.selected {
     left: 55%;
     transform: translate(-50%,-50%);
     background: #fff;
-    padding: 4% 6% 14%;
+    padding: 4% 6% 13%;
     text-align: center;
 }
 
@@ -207,6 +207,10 @@ a.selected {
     margin-bottom: 7%;
     color: #000000;
     position: relative;
+}
+
+.form-box .link{
+    margin-top: -5%;
 }
 
 .form-box h1::after{
@@ -257,8 +261,8 @@ input{
 
 .btn-field button{
     flex-basis: 48%;
-    margin-left: 16vh;
-    margin-top: 16%;
+    margin-left: 11vh;
+    margin-top: 20%;
     background:black;
     color: #fff;
     height: 7vh;
@@ -275,7 +279,7 @@ input{
 
 /*DISEÑO RESPONSIVE*/
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 400px) {
     .form-box{
         width: 50%;
         max-width: 100vh;
@@ -340,6 +344,10 @@ input{
         width: 100%;
         display: flex;
         justify-content: space-between;
+    }
+
+    .form-box .link{
+        padding-top: 10%;
     }
     
     .btn-field button{
@@ -367,17 +375,18 @@ input{
 
 }
 
-/*@media screen and (max-width: 1366px) {
+
+@media screen and (max-width: 650px) {
     .form-box{
-        width: 40%;
+        width: 50%;
         max-width: 100vh;
         margin-top: 1vh;
         position: absolute;
-        top: 52%;
-        left: 56%;
+        top: 55%;
+        left: 62%;
         transform: translate(-50%,-50%);
         background: #fff;
-        padding: 4% 6% 14%;
+        padding: 4% 6% 18%;
         text-align: center;
     }
     
@@ -386,6 +395,10 @@ input{
         margin-bottom: 7%;
         color: #000000;
         position: relative;
+    }
+
+    .form-box .link{
+        margin-top: -20%;
     }
     
     .form-box h1::after{
@@ -434,10 +447,16 @@ input{
         justify-content: space-between;
     }
     
+    .form-box .link{
+        margin-top: -50%;
+        font-size: 2vh;
+
+    }
+
     .btn-field button{
         flex-basis: 48%;
-        margin-left: 7.5vh;
-        margin-top: 0%;
+        margin-left: 6.5vh;
+        margin-top: 26%;
         background:black;
         color: #fff;
         height: 7vh;
@@ -453,23 +472,24 @@ input{
     }
 
     .title {
-        padding-left: 6vh;
+        padding-left: 10vh;
         font-size: 1.5vh;
     }
 
 }
-*/
-@media screen and (max-width: 360px) {
+
+
+@media screen and (max-width: 850px) {
     .form-box{
         width: 50%;
         max-width: 100vh;
         margin-top: 1vh;
         position: absolute;
-        top: 48%;
+        top: 55%;
         left: 62%;
         transform: translate(-50%,-50%);
         background: #fff;
-        padding: 4% 6% 14%;
+        padding: 4% 6% 18%;
         text-align: center;
     }
     
@@ -478,6 +498,10 @@ input{
         margin-bottom: 7%;
         color: #000000;
         position: relative;
+    }
+
+    .form-box .link{
+        margin-top: -20%;
     }
     
     .form-box h1::after{
@@ -526,9 +550,15 @@ input{
         justify-content: space-between;
     }
     
+    .form-box .link{
+        margin-top: -23%;
+        font-size: 2vh;
+
+    }
+
     .btn-field button{
         flex-basis: 48%;
-        margin-left: 5vh;
+        margin-left: 15vh;
         margin-top: 5%;
         background:black;
         color: #fff;
