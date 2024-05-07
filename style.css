@@ -46,7 +46,6 @@ body {
 header {
    position: -webkit-sticky;
     position: fixed;
-    top: 0;
     background-color: var(--dark-cyan);
     height: 12%;
     width: 100%;
@@ -180,44 +179,28 @@ a.selected {
 
 }
 
-main {
-    /* width: 100%;
-    height: 100vh;
-    background-color: #f5f5f5; */
-
-}
 
 /*Estilos Buscador*/
 .buscador {
-
-    width: 100%;
-    height: 80vh;
-    background-color: #058bf9;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.696), rgba(0, 0, 0, 0.696)), url(./assets/buscador.jpeg);
-
-    background-size: cover;
-    background-position: center;
-    background-position: right;
-
-
-
+ height: 100vh;
+width: 100%;
+margin-top: 4%;
+background-image: linear-gradient(rgba(0, 0, 0, 0.696), rgba(0, 0, 0, 0.696)), url(./assets/buscador.jpeg);
+background-size: cover;
+background-position: center;
+background-position: right;
+padding-bottom: 8vh;
 }
 
 .frase-buscador {
 
-    width: 50%;
-    height: 50%;
-    display: block;
-
-    margin-left: 25%;
-    margin-top: 15%;
-    text-align: center;
-    padding: 50px 0px;
-    font: 2em sans-serif;
-    color: #ffffff;
-    font-weight: bold;
-    font-family: 'Courier New', Courier, monospace;
-
+    margin-left: 10%;
+width: 80%;
+display: block;
+text-align: center;
+padding-top: 5%;
+font: 4.5vh sans-serif;
+color: #ffffff
 }
 
 .cuadro-buscador {
@@ -225,12 +208,13 @@ main {
     height: 50%;
     display: block;
     text-align: center;
-    padding: 100px 0px;
+    padding: 10% 0%;
 
     font: 2em sans-serif;
     color: #0c0b0b;
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
+    
 }
 
 .buscador input {
@@ -241,40 +225,37 @@ main {
     text-align: center;
     border-radius: 10px;
 
-    padding: 10px;
+    padding: 1%;
     font-size: 20px;
     outline: none;
     color: #121010;
     background-color: #ffffff;
 
-    margin-bottom: 10px;
+    margin-bottom: 10%;
 }
 
 .buscador input::placeholder {
-    color: #080808;
+    color: #060303;
 }
 
 .buscador i {
+    color: #efecec;
     font-size: 30px;
     cursor: pointer;
 }
 
 .buscador i:hover {
-    color: #efecec;
+    color: #4e4b4b;
 }
-
-
-
-
 
 /*Clases para usar en JavaScript*/
 
 .body_move {
-    margin-left: 250px;
+    margin-left: 220px;
 }
 
 .menu__sidebar_move {
-    width: 250px;
+    width: 220px;
 }
 
 /*Estilos para pasantía*/
@@ -356,7 +337,7 @@ main {
     }
 
     .icon__menu {
-        transform: translateX(1px);
+        transform: translateX(10px);
     }
 
 
