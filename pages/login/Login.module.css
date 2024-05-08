@@ -41,8 +41,6 @@ header {
  .home {
      margin-right: 100px;
      font-size: x-large;
-    
-    
  }
  
  .home a {
@@ -279,16 +277,92 @@ input{
 
 /*DISEÑO RESPONSIVE*/
 
-@media (max-width: 400px) {
+@media (max-width: 1300px){
+    .form-box{
+        height: 58%;
+    }
+
+    .form-box .link{
+        font-size: 2.3vh;
+    }
+
+    .btn-field button{
+        margin-left: 9vh;
+    }
+}
+
+@media (max-width: 1000px){
+    .form-box{
+        height: 60%;
+    }
+}
+
+@media (max-width: 850px) {
     .title{
-        font-size: 2.1vh;
+        font-size: 3vh;
+    }
+
+    .form-box{
+        width: 40%;
+        height: 65%;
+        top: 53%;
+        left: 58%;
+        padding: 4% 4% 19%;
+        border-radius: 1vh;
+    }
+    
+    .form-box .link{
+        font-size: 2.7vh;
+    }
+
+    .btn-field button{
+        margin-left: 12vh;
+    }
+}
+
+@media (max-width: 650px) {
+    .title{
+        font-size: 3vh;
     }
 
     .form-box{
         width: 60%;
+        height: 60%;
+        top: 50%;
+        left: 58%;
+        padding: 4% 4% 19%;
+        border-radius: 1vh;
+    }
+    
+    .form-box .link{
+        font-size: 2.vh;
+    }
+
+    .btn-field button{
+        margin-left: 12vh;
+        margin-top: 12%;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .home {
+        margin-right: 100px;
+        font-size: x-large;
+        font-size: 2.5vh;
+    }
+
+    .title{
+        font-size: 1.5vh;
+        margin-right: 3vh;
+    }
+
+    .form-box{
+        width: 60%;
+        height: 51%;
         top: 50%;
         left: 60%;
-        padding: 4% 4% 19%;
+        padding: 4% 4% 15%;
         border-radius: 1vh;
     }
     
@@ -301,50 +375,6 @@ input{
     }
 }
 
-@media (max-width: 650px) {
-    .title{
-        font-size: 3vh;
-    }
 
-    .form-box{
-        width: 40%;
-        height: 70%;
-        top: 53%;
-        left: 58%;
-        padding: 4% 4% 19%;
-        border-radius: 1vh;
-    }
-    
-    .form-box .link{
-        font-size: 2.7vh;
-    }
-
-    .btn-field button{
-        margin-left: 12vh;
-    }
-}
-
-@media (max-width: 850px) {
-    .title{
-        font-size: 3vh;
-    }
-
-    .form-box{
-        width: 40%;
-        height: 70%;
-        top: 53%;
-        left: 58%;
-        padding: 4% 4% 19%;
-        border-radius: 1vh;
-    }
-    
-    .form-box .link{
-        font-size: 2.7vh;
-    }
-
-    .btn-field button{
-        margin-left: 12vh;
-    }
-}
 
 
