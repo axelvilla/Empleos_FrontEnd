@@ -59,7 +59,7 @@ let arr = [];
                     <h2>${curr.company}</h2>
                     <div class="stat"></div>
                 </div>
-                <a href="#">${curr.position}</a>
+                <h2>${curr.position}</h2>
                 <ul class="availability">
                     <li>${curr.postedAt}</li>
                     <li>${curr.contract}</li>
