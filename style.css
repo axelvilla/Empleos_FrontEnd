@@ -191,48 +191,48 @@ background-position: center;
 background-position: right;
 padding-bottom: 8vh;
 }
-
-.frase-buscador {
-
-    margin-left: 10%;
-width: 80%;
+.titulo{
+    margin: 10% auto;
+    width: 100%;
+height: 50%;
 display: block;
 text-align: center;
-padding-top: 5%;
-font: 4.5vh sans-serif;
-color: #ffffff
+padding-top: 10%;
+font: 8vh sans-serif;
+color: #ffffff;
+font-weight: bold;
+font-family: 'Courier New', Courier, monospace;
 }
 
-.cuadro-buscador {
-    width: 100%;
-    height: 10%;
+.parrafo-titulo {
+    margin: 10% auto;
+    padding-top: 15%;
+    margin-left: 10%;
+    width: 80%;
     display: block;
     text-align: center;
-    padding: 10% 0%;
-
-    font: 2em sans-serif;
-    color: #0c0b0b;
-    font-weight: bold;
-    font-family: 'Courier New', Courier, monospace;
+    padding-top: 5%;
+    font: 4.5vh sans-serif;
+    color: #ffffff;
     
 }
 
 .buscador input {
+    margin-top: 20%;
+    padding-left: 15px;
     width: 50%;
-    height: 50px;
-    align-items: center;
-
-    text-align: center;
-    border-radius: 10px;
-
-    padding: 1%;
-    font-size: 20px;
-    outline: none;
-    color: #121010;
-    background-color: #ffffff;
-
-    margin-bottom: 10%;
+    margin-left: 25%;
+    display: inline-block;
+    margin-top: 5%;
+    background-color: var(--filter-cyan);
+    border-radius: 15px;
+    border: 0;
+    outline: 0;
+    height: 7vh;
+    font-size: 3.5vh;
+    
 }
+
 
 .buscador input::placeholder {
     color: #060303;
@@ -322,54 +322,6 @@ color: #ffffff
 .pasantias a:hover {
     cursor: pointer;
 }
-
-
-/*Estilos Responsive*/
-
-@media screen and (max-width: 760px) {
-    .body_move {
-        margin-left: 0px;
-    }
-
-    .menu__sidebar_move {
-        width: 80px;
-        left: -80px;
-    }
-
-    .icon__menu {
-        transform: translateX(10px);
-    }
-
-
-    .frase-buscador {
-        margin-left: 0px;
-        width: 100%;
-        font: 1.5em sans-serif;
-    }
-
-    .cuadro-buscador {
-        width: 100%;
-        font: 1.5em sans-serif;
-        padding: 0px;
-    }
-
-    .button-pasantia {
-        width: 40%;
-        margin-left: 30%;
-    }
-    .title-pasantia {
-        font: 4vh sans-serif;
-        font-weight: bold;
-    }
-    
-    .frase-pasantia {
-        font: 2.5vh sans-serif;
-    }
-
-
-}
-
-;
 
 /*Estilos Trabajos*/
 
@@ -585,6 +537,47 @@ main {
     background-color: var(--dark-cyan);
 }
 
+    /* ---------------------------------------------------------
+    estilos para el footer
+    --------------------------------------------------------- */
+
+footer{
+    width: 100%;
+    height: 22vh;
+    background-color: #1783DB;
+}
+footer .titulo-seccion{
+    margin: 1% auto;
+    color: #000;
+    font-size: 3em;   
+    text-align: center;
+    text-decoration: underline;
+} 
+footer .redes-sociales{
+    width: 100%;
+    padding: 1% 1% 2% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+footer i{
+    color: #000;
+    font-size: 5dvh;
+}
+footer p{
+    color: #000;
+    font-size: 1em;
+    text-align: center;
+}
+
+
+
+/* ---------------------------------------------------------
+    estilos para el responsive
+    --------------------------------------------------------- */
+
 @media (min-width: 700px) {
     .container img {
         position: static;
@@ -616,4 +609,52 @@ main {
     .tags>* {
         height: 40px;
     }
+
+    /*Estilos Responsive*/
+
+@media screen and (max-width: 760px) {
+    .body_move {
+        margin-left: 0px;
+    }
+
+    .menu__sidebar_move {
+        width: 80px;
+        left: -80px;
+    }
+
+    .icon__menu {
+        transform: translateX(10px);
+    }
+
+
+    .frase-buscador {
+        margin-left: 0px;
+        width: 100%;
+        font: 1.5em sans-serif;
+    }
+
+    .cuadro-buscador {
+        width: 100%;
+        font: 1.5em sans-serif;
+        padding: 0px;
+    }
+
+    .button-pasantia {
+        width: 40%;
+        margin-left: 30%;
+    }
+    .title-pasantia {
+        font: 4vh sans-serif;
+        font-weight: bold;
+    }
+    
+    .frase-pasantia {
+        font: 2.5vh sans-serif;
+    }
+
+
+}
+
+
+
 }
