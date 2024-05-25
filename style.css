@@ -248,15 +248,13 @@ font-family: 'Courier New', Courier, monospace;
     color: #4e4b4b;
 }
 
-/*Clases para usar en JavaScript*/
 
-.body_move {
-    margin-left: 220px;
-}
 
-.menu__sidebar_move {
-    width: 220px;
-}
+
+
+
+
+
 
 /*Estilos para pasantía*/
 
@@ -578,6 +576,15 @@ footer p{
     estilos para el responsive
     --------------------------------------------------------- */
 
+    /*Clases para usar en JavaScript*/
+
+.body_move {
+    margin-left: 220px;
+}
+
+.menu__sidebar_move {
+    width: 220px;
+}
 @media (min-width: 700px) {
     .container img {
         position: static;
@@ -628,13 +635,13 @@ footer p{
 
 
     .frase-buscador {
-        margin-left: 0px;
-        width: 100%;
+        margin-left: 15px;
+        width: 100vw;
         font: 1.5em sans-serif;
     }
 
     .cuadro-buscador {
-        width: 100%;
+        width: 100vw;
         font: 1.5em sans-serif;
         padding: 0px;
     }
